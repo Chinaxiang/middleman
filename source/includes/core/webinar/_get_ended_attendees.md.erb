@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/attendees/list
 ```
 
 ```javascript
-Zoom.webinar.getAttendees();
+Metting.webinar.getAttendees();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var webinar = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.getAttendees(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.getAttendees(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -54,7 +54,7 @@ Zoom.webinar.getAttendees(webinar, <%= config[:ex_node_res] %>);
       "questions": {
         "country": "US",
         "address": "1234 Some Street",
-        "city": "Zoomville"
+        "city": "Mettingville"
       }
     }
   ]

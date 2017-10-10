@@ -1,6 +1,6 @@
 ## Create a H.323/SIP Device
 
-Create a H.323/SIP Device on your Zoom account.
+Create a H.323/SIP Device on your Metting account.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>h323/device/create
 ```
 
 ```javascript
-Zoom.device.create();
+Metting.device.create();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var device = {
     ip: "192.168.1.10"
 }
 
-Zoom.device.create(device, <%= config[:ex_node_res] %>);
+Metting.device.create(device, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

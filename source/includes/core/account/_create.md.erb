@@ -1,8 +1,8 @@
 ## Create a sub account
 
-Create a sub account of the master account on Zoom, return the created sub account id and owner id.
+Create a sub account of the master account on Metting, return the created sub account id and owner id.
 
-<aside class="notice">Your account must be a master account and have this privilege to create sub account. Zoom only assign this privilege to trusted partner.</aside>
+<aside class="notice">Your account must be a master account and have this privilege to create sub account. Metting only assign this privilege to trusted partner.</aside>
 
 <aside class="notice">User will not receive the confirmation email.</aside>
 
@@ -13,7 +13,7 @@ POST <%= config[:api_host] %>ma/account/create
 ```
 
 ```javascript
-Zoom.account.create();
+Metting.account.create();
 ```
 
 > Example Request
@@ -39,7 +39,7 @@ var account = {
     password: "<%= config[:ex_password] %>",
 }
 
-Zoom.account.create(account, <%= config[:ex_node_res] %>);
+Metting.account.create(account, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -55,7 +55,7 @@ Zoom.account.create(account, <%= config[:ex_node_res] %>);
 
 Arguments | &nbsp;
 --- | ---
-email **required** | A valid email address. It must be unique in Zoom service. If an email address is existed, a "user existing" error message will be return.
+email **required** | A valid email address. It must be unique in Metting service. If an email address is existed, a "user existing" error message will be return.
 first_name **required** | User’s first name.
 last_name **required** | User’s last name.
 password **required** | User’s password.

@@ -1,6 +1,6 @@
 ## Deactivate a User
 
-Deactivate a user on Zoom, return the user ID.
+Deactivate a user on Metting, return the user ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/deactivate
 ```
 
 ```javascript
-Zoom.user.deactivate();
+Metting.user.deactivate();
 ```
 
 > Example Request
@@ -25,7 +25,7 @@ $ curl <%= config[:api_host] %>user/deactivate \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.deactivate({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
+Metting.user.deactivate({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

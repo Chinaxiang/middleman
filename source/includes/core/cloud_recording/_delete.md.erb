@@ -1,6 +1,6 @@
 ## Delete Recording
 
-Delete recorded meeting either on Zoom cloud or on-premise.
+Delete recorded meeting either on Metting cloud or on-premise.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>recording/delete
 ```
 
 ```javascript
-Zoom.recording.delete();
+Metting.recording.delete();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var recording = {
     meeting_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.recording.delete(recording, <%= config[:ex_node_res] %>);
+Metting.recording.delete(recording, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

@@ -1,6 +1,6 @@
 ## Get Recording
 
-Get the recorded meeting on either Zoom cloud or on-prem.
+Get the recorded meeting on either Metting cloud or on-prem.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>recording/get
 ```
 
 ```javascript
-Zoom.recording.get();
+Metting.recording.get();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var recording = {
     meeting_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.recording.get(recording, <%= config[:ex_node_res] %>);
+Metting.recording.get(recording, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -55,8 +55,8 @@ Zoom.recording.get(recording, <%= config[:ex_node_res] %>);
       "file_type": "MP4",
       "file_size": 438482,
       "status" : "completed",
-      "play_url": "https://brand.zoom.us/recording/play/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2",
-      "download_url": "https://brand.zoom.us/recording/download/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2"
+      "play_url": "https://brand.quanshi.us/recording/play/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2",
+      "download_url": "https://brand.quanshi.us/recording/download/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2"
     }
   ]
 }

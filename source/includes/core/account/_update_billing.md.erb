@@ -1,6 +1,6 @@
 ## Update Billing Information for a sub account
 
-Update Billing Information for a sub account of the master account on Zoom.
+Update Billing Information for a sub account of the master account on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>ma/account/billing/update
 ```
 
 ```javascript
-Zoom.account.updateBilling();
+Metting.account.updateBilling();
 ```
 
 > Example Request
@@ -30,7 +30,7 @@ var account = {
     plan: "monthly"
 }
 
-Zoom.account.updateBilling(account, <%= config[:ex_node_res] %>);
+Metting.account.updateBilling(account, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

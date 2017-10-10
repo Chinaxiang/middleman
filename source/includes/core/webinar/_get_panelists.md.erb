@@ -1,6 +1,6 @@
 ## Get Webinar Panelists
 
-Get all the Webinar Panelists on Zoom
+Get all the Webinar Panelists on Metting
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/panelists
 ```
 
 ```javascript
-Zoom.webinar.listPanelists();
+Metting.webinar.listPanelists();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var webinar = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.listPanelists(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.listPanelists(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -43,7 +43,7 @@ Zoom.webinar.listPanelists(webinar, <%= config[:ex_node_res] %>);
     {
       "name": "<%= config[:ex_first_name] %> <%= config[:ex_last_name] %>",
       "email": "<%= config[:ex_email] %>",
-      "join_url": "https://www.zoom.us/w/552681828?tk=TMnju_IjiU7Fx3eSkrajn2irvyMBNQ4XCW6cutSPntg.DQEAAAAAIPFBZBYwbzhKUUlXVVN3bW9Ed05QUmdvU2hBAA"
+      "join_url": "https://www.quanshi.us/w/552681828?tk=TMnju_IjiU7Fx3eSkrajn2irvyMBNQ4XCW6cutSPntg.DQEAAAAAIPFBZBYwbzhKUUlXVVN3bW9Ed05QUmdvU2hBAA"
     }
   ]
 }

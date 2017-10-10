@@ -1,6 +1,6 @@
 ## Delete A Webinar
 
-Delete a webinar on Zoom, return the deleted webinar ID.
+Delete a webinar on Metting, return the deleted webinar ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/delete
 ```
 
 ```javascript
-Zoom.webinar.delete();
+Metting.webinar.delete();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var webinar = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.delete(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.delete(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

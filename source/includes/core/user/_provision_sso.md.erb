@@ -1,6 +1,6 @@
 ## Pre Provisioning SSO User
 
-Create a SSO user on Zoom, return the created user ID.
+Create a SSO user on Metting, return the created user ID.
 
 <aside class="notice">The API is provided for enabling 'Pre-provisioning SSO User' options. User created in this way has no password. If it is not a basic user, will generate a Personal Vanity URL using user name (no domain) of the provisioning email. If user name or pmi is invalid or occupied, will use random number/random personal vanity URL.</aside>
 
@@ -11,7 +11,7 @@ POST <%= config[:api_host] %>user/ssocreate
 ```
 
 ```javascript
-Zoom.user.ssoCreate();
+Metting.user.ssoCreate();
 ```
 
 > Example Request
@@ -33,7 +33,7 @@ var user = {
     type: 1
 }
 
-Zoom.user.ssoCreate(user, <%= config[:ex_node_res] %>);
+Metting.user.ssoCreate(user, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -60,7 +60,7 @@ Zoom.user.ssoCreate(user, <%= config[:ex_node_res] %>);
   "enable_cloud_auto_recording": false,
   "verified": 0,
   "pmi": 0,
-  "vanity_url": "https://abc.zoom.us/my/test126",
+  "vanity_url": "https://abc.quanshi.us/my/test126",
   "meeting_capacity": 0,
   "enable_webinar": true,
   "webinar_capacity": 100,
@@ -83,7 +83,7 @@ Zoom.user.ssoCreate(user, <%= config[:ex_node_res] %>);
 
 Arguments | &nbsp;
 --- | ---
-email **required** | A valid email address. It must be unique in Zoom service.
+email **required** | A valid email address. It must be unique in Metting service.
 type **required** | User’s type. 1 means it is a basic user. 2 means a pro user, 3 means a corp user. Basic user can host up to 40 minutes meeting.
 first_name *optional* | User’s first name.
 last_name *optional* | User’s last name.

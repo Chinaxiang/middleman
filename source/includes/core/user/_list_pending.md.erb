@@ -1,6 +1,6 @@
 ## List Pending Users
 
-List all the pending users on Zoom
+List all the pending users on Metting
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/pending
 ```
 
 ```javascript
-Zoom.user.listPending();
+Metting.user.listPending();
 ```
 
 > Example Request
@@ -24,7 +24,7 @@ $ curl <%= config[:api_host] %>user/pending \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.listPending(<%= config[:ex_node_res] %>);
+Metting.user.listPending(<%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -39,7 +39,7 @@ Zoom.user.listPending(<%= config[:ex_node_res] %>);
     {
         "id": "<%= config[:ex_uuid] %>",
         "email": "<%= config[:ex_email] %>",
-        "first_name": "Zoom",
+        "first_name": "Metting",
         "last_name": "User",
         "type": 1,
         "enable_large": false,

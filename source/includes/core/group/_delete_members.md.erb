@@ -1,6 +1,6 @@
 ## Delete Group Members
 
-Delete members of a group on Zoom.
+Delete members of a group on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>group/member/delete
 ```
 
 ```javascript
-Zoom.group.memberDelete();
+Metting.group.memberDelete();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var group = {
     member_ids: "<%= config[:ex_uuid] %>,<%= config[:ex_uuid] %>"
 }
 
-Zoom.group.memberDelete(group, <%= config[:ex_node_res] %>);
+Metting.group.memberDelete(group, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

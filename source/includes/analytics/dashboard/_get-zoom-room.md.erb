@@ -1,21 +1,21 @@
-## Get Zoom Room Detail
+## Get Metting Room Detail
 
-Get a Zoom Room on Zoom via Zoom ID, return the Zoom Room info.
+Get a Metting Room on Metting via Metting ID, return the Metting Room info.
 
 > Definition
 
 ```shell
-POST <%= config[:api_host] %>metrics/zoomroomdetail
+POST <%= config[:api_host] %>metrics/quanshiroomdetail
 ```
 
 ```javascript
-Zoom.dashboard.room();
+Metting.dashboard.room();
 ```
 
 > Example Request
 
 ```shell
-$ curl <%= config[:api_host] %>metrics/zoomroomdetail \
+$ curl <%= config[:api_host] %>metrics/quanshiroomdetail \
     -X POST \
     -d api_key=<%= config[:ex_api_key] %> \
     -d api_secret=<%= config[:ex_api_secret] %> \
@@ -33,7 +33,7 @@ var dashboard = {
     to: "2013-02-11T08:18:09Z"
 }
 
-Zoom.dashboard.room(dashboard, <%= config[:ex_node_res] %>);
+Metting.dashboard.room(dashboard, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -46,10 +46,10 @@ Zoom.dashboard.room(dashboard, <%= config[:ex_node_res] %>);
   "page_number": 1,
   "page_size": 30,
   "total_records": 1,
-  "zoom_room": {
+  "quanshi_room": {
     "id": "<%= config[:ex_uuid] %>",
-    "room_name": "zoom room",
-    "email": "zoomroom@zoom.us",
+    "room_name": "quanshi room",
+    "email": "quanshiroom@quanshi.us",
     "account_type": "Work Email",
     "passcode": "123",
     "status": "Available",
@@ -103,7 +103,7 @@ Zoom.dashboard.room(dashboard, <%= config[:ex_node_res] %>);
 
 Arguments | &nbsp;
 --- | ---
-id **required** | The zoom room ID. Example: ucc69C82Q5mTNyCRWE29Aw== Or B9C73AF4-2F36-4399-9337-2091584DBD03
+id **required** | The quanshi room ID. Example: ucc69C82Q5mTNyCRWE29Aw== Or B9C73AF4-2F36-4399-9337-2091584DBD03
 from **required** | Start date.
 to **required** | End date.
 page_size *optional* | The amount of records returns within a single API call. Defaults to 30. Max of 30 records. *Default: 30*

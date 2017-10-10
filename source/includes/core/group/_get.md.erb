@@ -1,6 +1,6 @@
 ## Get Group Info
 
-Get a group on Zoom via ID, return the group info.
+Get a group on Metting via ID, return the group info.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>group/get
 ```
 
 ```javascript
-Zoom.group.get();
+Metting.group.get();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var group = {
     id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.group.get(group, <%= config[:ex_node_res] %>);
+Metting.group.get(group, <%= config[:ex_node_res] %>);
 ```
 
 

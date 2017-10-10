@@ -1,6 +1,6 @@
 ## List Recording
 
-List all the cloud recording meetings on Zoom.
+List all the cloud recording meetings on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>recording/list
 ```
 
 ```javascript
-Zoom.recording.list();
+Metting.recording.list();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var recording = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.recording.list(recording, <%= config[:ex_node_res] %>);
+Metting.recording.list(recording, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -61,8 +61,8 @@ Zoom.recording.list(recording, <%= config[:ex_node_res] %>);
           "file_type": "M4A",
           "file_size": 432432,
           "status" : "completed",
-          "play_url": "https://brand.zoom.us/recording/play/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2",
-          "download_url": "https://brand.zoom.us/recording/download/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2"
+          "play_url": "https://brand.quanshi.us/recording/play/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2",
+          "download_url": "https://brand.quanshi.us/recording/download/HzMyuI23bqxlJLVJLrww3L9ZuFeZEvYtG0vQ6pHhp6Twr6GPjX4Qks_CJak7jrU2"
         }
       ]
     }

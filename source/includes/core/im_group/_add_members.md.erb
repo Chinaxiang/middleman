@@ -1,6 +1,6 @@
 ## Add Group Members
 
-Add members to a group on Zoom.
+Add members to a group on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>group/member/add
 ```
 
 ```javascript
-Zoom.imGroup.memberAdd();
+Metting.imGroup.memberAdd();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var group = {
     member_ids: "<%= config[:ex_uuid] %>,<%= config[:ex_uuid] %>"
 }
 
-Zoom.imGroup.memberAdd(group, <%= config[:ex_node_res] %>);
+Metting.imGroup.memberAdd(group, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

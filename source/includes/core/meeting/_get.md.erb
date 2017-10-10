@@ -1,6 +1,6 @@
 ## Get Meeting Info
 
-Get a meeting on Zoom via meeting ID, return the meeting info.
+Get a meeting on Metting via meeting ID, return the meeting info.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>meeting/get
 ```
 
 ```javascript
-Zoom.meeting.end();
+Metting.meeting.end();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var meeting = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.meeting.get(meeting, <%= config[:ex_node_res] %>);
+Metting.meeting.get(meeting, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -41,7 +41,7 @@ Zoom.meeting.get(meeting, <%= config[:ex_node_res] %>);
   "uuid": "<%= config[:ex_uuid] %>",
   "id": "<%= config[:ex_meeting_number] %>",
   "host_id": "<%= config[:ex_uuid] %>",
-  "topic": "Zoom Meeting",
+  "topic": "Metting Meeting",
   "password": "",
   "h323_password": "",
   "status": 0,
@@ -60,8 +60,8 @@ Zoom.meeting.get(meeting, <%= config[:ex_node_res] %>);
   "start_time": "",
   "duration": 0,
   "timezone": "Asia/Hong_Kong",
-  "start_url": "https://www.zoom.us/s/<%= config[:ex_meeting_number] %>?zpk=xxxx",
-  "join_url": "https://www.zoom.us/j/<%= config[:ex_meeting_number] %>",
+  "start_url": "https://www.quanshi.us/s/<%= config[:ex_meeting_number] %>?zpk=xxxx",
+  "join_url": "https://www.quanshi.us/j/<%= config[:ex_meeting_number] %>",
   "created_at": "2016-12-20T02:51:42Z",
   "occurrences": [
     {

@@ -1,6 +1,6 @@
 ## Update a H.323/SIP Device
 
-Update a H.323/SIP Device on your Zoom account.
+Update a H.323/SIP Device on your Metting account.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>h323/device/update
 ```
 
 ```javascript
-Zoom.device.update();
+Metting.device.update();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var device = {
     id: "<%= config[:ex_uuid] %>",
 }
 
-Zoom.device.update(device, <%= config[:ex_node_res] %>);
+Metting.device.update(device, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

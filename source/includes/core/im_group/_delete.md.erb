@@ -1,6 +1,6 @@
 ## Delete IM Group
 
-Delete a IM group on Zoom, return the deleted group ID.
+Delete a IM group on Metting, return the deleted group ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>im/group/delete
 ```
 
 ```javascript
-Zoom.imGroup.delete();
+Metting.imGroup.delete();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var group = {
     id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.imGroup.delete(group, <%= config[:ex_node_res] %>);
+Metting.imGroup.delete(group, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

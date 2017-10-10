@@ -1,6 +1,6 @@
 ## Create A Meeting
 
-Create a meeting on Zoom, return the created meeting URL
+Create a meeting on Metting, return the created meeting URL
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>meeting/create
 ```
 
 ```javascript
-Zoom.meeting.create();
+Metting.meeting.create();
 ```
 
 > Example Request
@@ -33,7 +33,7 @@ var meeting = {
     topic: "<%= config[:ex_meeting_topic] %>"
 }
 
-Zoom.meeting.create(meeting, <%= config[:ex_node_res] %>);
+Metting.meeting.create(meeting, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -43,8 +43,8 @@ Zoom.meeting.create(meeting, <%= config[:ex_node_res] %>);
   "uuid": "<%= config[:ex_uuid] %>",
   "id": "<%= config[:ex_meeting_number] %>",
   "real_id": "<%= config[:ex_meeting_number] %>",
-  "start_url": "https://zoom.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
-  "join_url": "https://zoom.us/j/<%= config[:ex_meeting_number] %>",
+  "start_url": "https://quanshi.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
+  "join_url": "https://quanshi.us/j/<%= config[:ex_meeting_number] %>",
   "created_at": "2012-11-25T12:00:00Z",
   "host_id": "<%= config[:ex_uuid] %>",
   "topic": "Topic for this meeting",
@@ -67,7 +67,7 @@ Zoom.meeting.create(meeting, <%= config[:ex_node_res] %>);
 ```
 
 <aside class="notice">"real_id" will be returned if Personal Meeting ID was used to create meeting</aside>
-<aside class="notice">If a meeting is created with a password, the join url will include an encoded password parameter, ex. "https://success.zoom.us/j/123456789?pwd=5fWX5R62yXlmhYpRK-USOg" which will bypass the password prompt</aside>
+<aside class="notice">If a meeting is created with a password, the join url will include an encoded password parameter, ex. "https://success.quanshi.us/j/123456789?pwd=5fWX5R62yXlmhYpRK-USOg" which will bypass the password prompt</aside>
 
 Arguments | &nbsp;
 --- | ---

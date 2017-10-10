@@ -1,6 +1,6 @@
 ## End A Webinar
 
-End a Webinar on Zoom, return the deleted Webinar ID
+End a Webinar on Metting, return the deleted Webinar ID
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/end
 ```
 
 ```javascript
-Zoom.webinar.end();
+Metting.webinar.end();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var webinar = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.end(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.end(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

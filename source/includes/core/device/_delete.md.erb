@@ -1,6 +1,6 @@
 ## Delete a H.323/SIP Device
 
-Delete a H.323/SIP Device on your Zoom account.
+Delete a H.323/SIP Device on your Metting account.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>h323/device/delete
 ```
 
 ```javascript
-Zoom.device.delete();
+Metting.device.delete();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var device = {
     id: "<%= config[:ex_uuid] %>",
 }
 
-Zoom.device.delete(device, <%= config[:ex_node_res] %>);
+Metting.device.delete(device, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

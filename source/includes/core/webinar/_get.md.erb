@@ -1,6 +1,6 @@
 ## Get Webinar Info
 
-Get a Webinar on Zoom via Webinar ID, return the Webinar info
+Get a Webinar on Metting via Webinar ID, return the Webinar info
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/get
 ```
 
 ```javascript
-Zoom.webinar.get();
+Metting.webinar.get();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var webinar = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.get(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.get(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -40,8 +40,8 @@ Zoom.webinar.get(webinar, <%= config[:ex_node_res] %>);
 {
   "uuid": "<%= config[:ex_uuid] %>",
   "id": "<%= config[:ex_meeting_number] %>",
-  "start_url": "https://zoom.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
-  "join_url": "https://zoom.us/j/<%= config[:ex_meeting_number] %>",
+  "start_url": "https://quanshi.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
+  "join_url": "https://quanshi.us/j/<%= config[:ex_meeting_number] %>",
   "registration_url": "",
   "created_at": "2012-11-25T12:00:00Z",
   "host_id": "<%= config[:ex_uuid] %>",

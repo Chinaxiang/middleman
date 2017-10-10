@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/revoketoken
 ```
 
 ```javascript
-Zoom.user.revokeToken();
+Metting.user.revokeToken();
 ```
 
 > Example Request
@@ -25,7 +25,7 @@ $ curl <%= config[:api_host] %>user/revoketoken \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.revokeToken({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
+Metting.user.revokeToken({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

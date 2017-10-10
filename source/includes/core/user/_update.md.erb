@@ -1,6 +1,6 @@
 ## Update User Info
 
-Update user info on Zoom via user ID.
+Update user info on Metting via user ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/update
 ```
 
 ```javascript
-Zoom.user.update();
+Metting.user.update();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var user = {
     lasst_name: "<%= config[:ex_last_name] %>"
 }
 
-Zoom.user.update(user, <%= config[:ex_node_res] %>);
+Metting.user.update(user, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

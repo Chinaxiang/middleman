@@ -1,6 +1,6 @@
 ## Delete a User
 
-Delete a user on Zoom, return the deleted user ID.
+Delete a user on Metting, return the deleted user ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/delete
 ```
 
 ```javascript
-Zoom.user.delete();
+Metting.user.delete();
 ```
 
 > Example Request
@@ -25,7 +25,7 @@ $ curl <%= config[:api_host] %>user/delete \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.delete({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
+Metting.user.delete({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

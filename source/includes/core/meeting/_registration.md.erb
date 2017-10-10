@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>meeting/register
 ```
 
 ```javascript
-Zoom.meeting.register();
+Metting.meeting.register();
 ```
 
 > Example Request
@@ -35,7 +35,7 @@ var registration = {
     last_name: "<%= config[:ex_last_name] %>"
 }
 
-Zoom.meeting.register(registration, <%= config[:ex_node_res] %>);
+Metting.meeting.register(registration, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -46,7 +46,7 @@ Zoom.meeting.register(registration, <%= config[:ex_node_res] %>);
   "id": "<%= config[:ex_meeting_number] %>",
   "topic": "meeting registration",
   "start_time": "2016-02-21T04:00:00Z",
-  "join_url": "https://www.zoom.us/w/869275230?tk=2DsQiu6nZVsZVATrPLvXgqPvw8mmKyxgAGaDMizLv34.DQEAAAAAM9AWXhZ2Nm5vRjIyMlRoUzE3ZktWM3l4cHVRAA"
+  "join_url": "https://www.quanshi.us/w/869275230?tk=2DsQiu6nZVsZVATrPLvXgqPvw8mmKyxgAGaDMizLv34.DQEAAAAAM9AWXhZ2Nm5vRjIyMlRoUzE3ZktWM3l4cHVRAA"
 }
 ```
 

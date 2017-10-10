@@ -1,6 +1,6 @@
 ## List Live Meetings
 
-Lists the live meetings on Zoom.
+Lists the live meetings on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>meeting/live
 ```
 
 ```javascript
-Zoom.meeting.listLive();
+Metting.meeting.listLive();
 ```
 
 > Example Request
@@ -24,7 +24,7 @@ $ curl <%= config[:api_host] %>meeting/live \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.meeting.listLive(<%= config[:ex_node_res] %>);
+Metting.meeting.listLive(<%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -39,8 +39,8 @@ Zoom.meeting.listLive(<%= config[:ex_node_res] %>);
     {
       "uuid": "<%= config[:ex_uuid] %>",
       "id": "<%= config[:ex_meeting_number] %>",
-      "start_url": "https://zoom.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
-      "join_url": "https://zoom.us/j/<%= config[:ex_meeting_number] %>",
+      "start_url": "https://quanshi.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
+      "join_url": "https://quanshi.us/j/<%= config[:ex_meeting_number] %>",
       "created_at": "2012-11-25T12:00:00Z",
       "host_id": "<%= config[:ex_uuid] %>",
       "topic": "Topic for this meeting",

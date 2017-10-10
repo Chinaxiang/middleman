@@ -1,6 +1,6 @@
 ## Get User QoS
 
-Get the users quality of service in a Zoom Meeting
+Get the users quality of service in a Metting Meeting
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>metrics/qos
 ```
 
 ```javascript
-Zoom.dashboard.qos();
+Metting.dashboard.qos();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var dashboard = {
     type: 1
 }
 
-Zoom.dashboard.qos(dashboard, <%= config[:ex_node_res] %>);
+Metting.dashboard.qos(dashboard, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -100,9 +100,9 @@ Zoom.dashboard.qos(dashboard, <%= config[:ex_node_res] %>);
         "frame_rate": ""
       },
       "cpu_usage": {
-        "zoom_min_cpu_usage": "1%",
-        "zoom_avg_cpu_usage": "3%",
-        "zoom_max_cpu_usage": "5%",
+        "quanshi_min_cpu_usage": "1%",
+        "quanshi_avg_cpu_usage": "3%",
+        "quanshi_max_cpu_usage": "5%",
         "system_max_cpu_usage": "20%"
       }
     }

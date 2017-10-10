@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/registration
 ```
 
 ```javascript
-Zoom.webinar.getRegistration();
+Metting.webinar.getRegistration();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var webinar = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.getRegistration(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.getRegistration(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -50,7 +50,7 @@ Zoom.webinar.getRegistration(webinar, <%= config[:ex_node_res] %>);
       "create_time": "2015-08-23T03:03:48Z",
       "approval": "approved",
       "email": "<%= config[:ex_email] %>",
-      "registration_url": "https://api.zoom.us/w/206388466?tk=n8-qbK4ocC73mPjIRlheMksYPxeWAhnktoUZq_xAqg8.DQEAAAAADE088hZKTXcxTllpelFjZXNfNDg0NlNKQ3lRAA"
+      "registration_url": "https://api.quanshi.us/w/206388466?tk=n8-qbK4ocC73mPjIRlheMksYPxeWAhnktoUZq_xAqg8.DQEAAAAADE088hZKTXcxTllpelFjZXNfNDg0NlNKQ3lRAA"
     }
   ]
 }

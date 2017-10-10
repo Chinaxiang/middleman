@@ -1,6 +1,6 @@
 ## Delete A Group
 
-Delete a group on Zoom, return the deleted group ID.
+Delete a group on Metting, return the deleted group ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>group/delete
 ```
 
 ```javascript
-Zoom.group.delete();
+Metting.group.delete();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var group = {
     id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.group.delete(group, <%= config[:ex_node_res] %>);
+Metting.group.delete(group, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

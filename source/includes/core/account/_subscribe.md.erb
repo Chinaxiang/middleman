@@ -1,6 +1,6 @@
 ## Subscribe plans for a sub account
 
-Subscribe plans for a sub account of the master account on Zoom.
+Subscribe plans for a sub account of the master account on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>ma/account/plan/subscribe
 ```
 
 ```javascript
-Zoom.account.planSubscribe();
+Metting.account.planSubscribe();
 ```
 
 > Example Request
@@ -24,7 +24,7 @@ $ curl <%= config[:api_host] %>ma/account/plan/subscribe \
     -d last_name=<%= config[:ex_last_name] %> \
     -d phone_number="4085555555" \
     -d addres="1234 Some Street" \
-    -d city="Zoomville" \
+    -d city="Mettingville" \
     -d country="US" \
     -d state="CA" \
     -d zip="95037" \
@@ -40,7 +40,7 @@ var account = {
     last_name: "<%= config[:ex_last_name] %>",
     phone_number: "5555555555",
     addres: "1234 Some Street",
-    city: "Zoomville",
+    city: "Mettingville",
     country: "US",
     state: "CA",
     zip: "95037",
@@ -50,7 +50,7 @@ var account = {
     }
 }
 
-Zoom.account.planSubscribe(account, <%= config[:ex_node_res] %>);
+Metting.account.planSubscribe(account, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -71,7 +71,7 @@ Zoom.account.planSubscribe(account, <%= config[:ex_node_res] %>);
     "type": "monthly",
     "hosts": 9
   },
-  "plan_zoom_rooms": {
+  "plan_quanshi_rooms": {
     "type": "zroom_monthly",
     "hosts": 9
   },
@@ -143,7 +143,7 @@ country **required** | Sold To Contact’s country. For this parameter value ple
 state **required** | Sold To Contact’s state. If country value is "US" or "CA", for this parameter value please refer to the id value in [state list](#states)
 zip **required** | Sold To Contact’s zip/postal.
 plan_base **required** | Base Plan.  See [Plans](#plans) for more details
-plan_zoom_rooms *optional* | Additional Zoom Rooms Plan.  See [Plans](#plans) for more details
+plan_quanshi_rooms *optional* | Additional Metting Rooms Plan.  See [Plans](#plans) for more details
 plan_room_connector *optional* | Additional H.323/SIP Room Connector Plan.  See [Plans](#plans) for more details
 plan_large_meeting *optional* | Additional Large Meeting Plan.  See [Plans](#plans) for more details
 plan_webinar *optional* | Additional Webinar Plan.  See [Plans](#plans) for more details

@@ -1,6 +1,6 @@
 ## Update a plan for a sub account
 
-Update a plan for a sub account of the master account on Zoom.
+Update a plan for a sub account of the master account on Metting.
 
 <aside class="notice">Only for the sub account which is a paid account and paid by master account.</aside>
 
@@ -13,7 +13,7 @@ POST <%= config[:api_host] %>ma/account/plan/update
 ```
 
 ```javascript
-Zoom.account.planUpdate();
+Metting.account.planUpdate();
 ```
 
 > Example Request
@@ -37,7 +37,7 @@ var account = {
     plan: "monthly"
 }
 
-Zoom.account.planUpdate(account, <%= config[:ex_node_res] %>);
+Metting.account.planUpdate(account, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

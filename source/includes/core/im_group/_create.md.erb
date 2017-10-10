@@ -1,6 +1,6 @@
 ## Create IM Group
 
-Create a IM group on Zoom, return the new group info.
+Create a IM group on Metting, return the new group info.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>im/group/create
 ```
 
 ```javascript
-Zoom.imGroup.create();
+Metting.imGroup.create();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var group = {
     name: "Group Name"
 }
 
-Zoom.imGroup.create(group, <%= config[:ex_node_res] %>);
+Metting.imGroup.create(group, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

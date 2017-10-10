@@ -1,6 +1,6 @@
 ## Get User by Email Address and Login Type
 
-Get a user on Zoom via user email address and login type, return the user info.
+Get a user on Metting via user email address and login type, return the user info.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/getbyemail
 ```
 
 ```javascript
-Zoom.user.getByEmail();
+Metting.user.getByEmail();
 ```
 
 > Example Request
@@ -26,7 +26,7 @@ $ curl <%= config[:api_host] %>user/getbyemail \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.getByEmail({email: '<%= config[:ex_email] %>', type: 100}, <%= config[:ex_node_res] %>);
+Metting.user.getByEmail({email: '<%= config[:ex_email] %>', type: 100}, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -40,7 +40,7 @@ Zoom.user.getByEmail({email: '<%= config[:ex_email] %>', type: 100}, <%= config[
   "last_name": "<%= config[:ex_last_name] %>",
   "type": 1,
   "token": "adlfjadslfkjasdkljfkjalkadfskjdsafkjdfsajkllajsdfaljsdf",
-  "pic_url": "https://www.zoom.us/p/bNsPi",
+  "pic_url": "https://www.quanshi.us/p/bNsPi",
   "disable_chat": false,
   "enable_e2e_encryption": false,
   "enable_silent_mode": true,
@@ -54,7 +54,7 @@ Zoom.user.getByEmail({email: '<%= config[:ex_email] %>', type: 100}, <%= config[
   "enable_cloud_auto_recording": false,
   "verified": 1,
   "pmi": 2035134243,
-  "vanity_url": "https://zoom.us/my/test",
+  "vanity_url": "https://quanshi.us/my/test",
   "meeting_capacity": 0,
   "enable_webinar": true,
   "webinar_capacity": 100,

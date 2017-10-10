@@ -1,6 +1,6 @@
 ## End A Meeting
 
-End a meeting on Zoom, return the deleted meeting ID.
+End a meeting on Metting, return the deleted meeting ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>meeting/end
 ```
 
 ```javascript
-Zoom.meeting.end();
+Metting.meeting.end();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var meeting = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.meeting.end(meeting, <%= config[:ex_node_res] %>);
+Metting.meeting.end(meeting, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

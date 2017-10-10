@@ -1,6 +1,6 @@
 ## Get User
 
-Get a user info on Zoom via user ID
+Get a user info on Metting via user ID
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/get
 ```
 
 ```javascript
-Zoom.user.get();
+Metting.user.get();
 ```
 
 > Example Request
@@ -25,7 +25,7 @@ $ curl <%= config[:api_host] %>user/get \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.get({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
+Metting.user.get({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -40,7 +40,7 @@ Zoom.user.get({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
   "last_name": "<%= config[:ex_last_name] %>",
   "type": 1,
   "token": "adlfjadslfkjasdkljfkjalkadfskjdsafkjdfsajkllajsdfaljsdf",
-  "pic_url": "https://www.zoom.us/p/bNsPi",
+  "pic_url": "https://www.quanshi.us/p/bNsPi",
   "disable_chat": false,
   "enable_e2e_encryption": false,
   "enable_silent_mode": true,
@@ -54,7 +54,7 @@ Zoom.user.get({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
   "enable_cloud_auto_recording": false,
   "verified": 1,
   "pmi": 2035134243,
-  "vanity_url": "https://zoom.us/my/test",
+  "vanity_url": "https://quanshi.us/my/test",
   "meeting_capacity": 0,
   "enable_webinar": true,
   "webinar_capacity": 100,
@@ -74,7 +74,7 @@ Zoom.user.get({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
 }
 ```
 
-<aside class="notice">The response 'token' variable can be used to generate start meeting zoomus protocol URL</aside>
+<aside class="notice">The response 'token' variable can be used to generate start meeting quanshimetting protocol URL</aside>
 
 Arguments | &nbsp; 
 -------- | -----------

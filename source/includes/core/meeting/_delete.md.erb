@@ -1,6 +1,6 @@
 ## Delete A Meeting
 
-Delete a meeting on Zoom, return the deleted meeting ID.
+Delete a meeting on Metting, return the deleted meeting ID.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>meeting/delete
 ```
 
 ```javascript
-Zoom.meeting.delete();
+Metting.meeting.delete();
 ```
 
 > Example Request
@@ -31,7 +31,7 @@ var meeting = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.meeting.delete(meeting, <%= config[:ex_node_res] %>);
+Metting.meeting.delete(meeting, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

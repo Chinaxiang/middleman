@@ -1,6 +1,6 @@
 ## Update a sub account
 
-Update a sub account of the master account on Zoom, return the updated sub account id.
+Update a sub account of the master account on Metting, return the updated sub account id.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>ma/account/update
 ```
 
 ```javascript
-Zoom.account.update();
+Metting.account.update();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var account = {
     account_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.account.update(account, <%= config[:ex_node_res] %>);
+Metting.account.update(account, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

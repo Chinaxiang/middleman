@@ -1,6 +1,6 @@
 ## Delete User Permanently
 
-Delete a user from Zoom system permanently.
+Delete a user from Metting system permanently.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/permanentdelete
 ```
 
 ```javascript
-Zoom.user.permanentDelete();
+Metting.user.permanentDelete();
 ```
 
 > Example Request
@@ -25,7 +25,7 @@ $ curl <%= config[:api_host] %>user/permanentdelete \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.permanentDelete({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
+Metting.user.permanentDelete({id: '<%= config[:ex_uuid] %>'}, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

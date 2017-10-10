@@ -1,13 +1,13 @@
 ## Cust Create User
 
-Create a user on Zoom, returns the created user ID.
+Create a user on Metting, returns the created user ID.
 
 <aside class="notice">
 The API is provided for API plan only
 </aside>
 
 <aside class="notice">
-User created in this way has no password and is not able to log into the Zoom web site or client
+User created in this way has no password and is not able to log into the Metting web site or client
 </aside>
 
 > Definition
@@ -17,7 +17,7 @@ POST <%= config[:api_host] %>user/custcreate
 ```
 
 ```javascript
-Zoom.user.custCreate();
+Metting.user.custCreate();
 ```
 
 > Example Request
@@ -39,7 +39,7 @@ var user = {
     type: 1
 }
 
-Zoom.user.custCreate(user, <%= config[:ex_node_res] %>);
+Metting.user.custCreate(user, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -99,7 +99,7 @@ Zoom.user.custCreate(user, <%= config[:ex_node_res] %>);
 
 Arguments | &nbsp; 
 -------- | -----------
-email **required**                                  | A valid email address. It must be unique in Zoom service. If an email address is existed, a "user existing" error message will be return
+email **required**                                  | A valid email address. It must be unique in Metting service. If an email address is existed, a "user existing" error message will be return
 type **required**                                   | User’s type. 1 for basic user, 2 for pro user, 3 for corp user. Basic user can host up to 40 minutes meeting
 first_name *optional*                               | User's first name
 last_name *optional*                                | User's last name

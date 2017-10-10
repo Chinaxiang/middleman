@@ -1,6 +1,6 @@
 ## List H.323/SIP Devices
 
-List H.323/SIP Devices on your Zoom account.
+List H.323/SIP Devices on your Metting account.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>h323/device/list
 ```
 
 ```javascript
-Zoom.device.list();
+Metting.device.list();
 ```
 
 > Example Request
@@ -24,7 +24,7 @@ $ curl <%= config[:api_host] %>h323/device/list \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.device.list(<%= config[:ex_node_res] %>);
+Metting.device.list(<%= config[:ex_node_res] %>);
 ```
 
 > Example Response

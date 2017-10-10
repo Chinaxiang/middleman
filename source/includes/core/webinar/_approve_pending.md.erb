@@ -1,6 +1,6 @@
 ## Approve Pending Registrants
 
-Approve pending registrants on Zoom Webinar.
+Approve pending registrants on Metting Webinar.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/registrants/approve
 ```
 
 ```javascript
-Zoom.webinar.approveRegistration();
+Metting.webinar.approveRegistration();
 ```
 
 > Example Request
@@ -33,7 +33,7 @@ var webinar = {
     registrants_ids: "<%= config[:ex_uuid] %>,<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.approveRegistration(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.approveRegistration(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

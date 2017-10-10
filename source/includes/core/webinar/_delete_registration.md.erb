@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/registration/cancel
 ```
 
 ```javascript
-Zoom.webinar.cancelRegistration();
+Metting.webinar.cancelRegistration();
 ```
 
 > Example Request
@@ -33,7 +33,7 @@ var webinar = {
     registrants_ids: "<%= config[:ex_uuid] %>,<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.cancelRegistration(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.cancelRegistration(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

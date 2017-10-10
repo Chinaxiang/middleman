@@ -1,6 +1,6 @@
 ## List IM Groups
 
-List all IM groups on your Zoom account.
+List all IM groups on your Metting account.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>im/group/list
 ```
 
 ```javascript
-Zoom.imGroup.list();
+Metting.imGroup.list();
 ```
 
 > Example Request
@@ -24,7 +24,7 @@ $ curl <%= config[:api_host] %>im/group/list \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.imGroup.list(<%= config[:ex_node_res] %>);
+Metting.imGroup.list(<%= config[:ex_node_res] %>);
 ```
 
 > Example Response

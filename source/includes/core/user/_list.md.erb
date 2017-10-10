@@ -1,6 +1,6 @@
 ## List Users
 
-List all the users on Zoom
+List all the users on Metting
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>user/list
 ```
 
 ```javascript
-Zoom.user.list();
+Metting.user.list();
 ```
 
 > Example Request
@@ -24,7 +24,7 @@ $ curl <%= config[:api_host] %>user/list \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.user.list(<%= config[:ex_node_res] %>);
+Metting.user.list(<%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -43,7 +43,7 @@ Zoom.user.list(<%= config[:ex_node_res] %>);
       "first_name": "<%= config[:ex_first_name] %>",
       "last_name": "<%= config[:ex_last_name] %>",
       "type": 1,
-      "pic_url": "https://www.zoom.us/p/bNsPi",
+      "pic_url": "https://www.quanshi.us/p/bNsPi",
       "disable_chat": false,
       "enable_e2e_encryption": false,
       "enable_silent_mode": true,

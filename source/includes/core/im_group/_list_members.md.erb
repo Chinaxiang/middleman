@@ -1,6 +1,6 @@
 ## List IM Group Members
 
-Lists the members of a IM group on Zoom.
+Lists the members of a IM group on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>im/group/member/list
 ```
 
 ```javascript
-Zoom.imGroup.memberList();
+Metting.imGroup.memberList();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var group = {
     id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.imGroup.memberList(group, <%= config[:ex_node_res] %>);
+Metting.imGroup.memberList(group, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -46,7 +46,7 @@ Zoom.imGroup.memberList(group, <%= config[:ex_node_res] %>);
       "email": "<%= config[:ex_email] %>",
       "first_name": "<%= config[:ex_first_name] %>",
       "last_name": "<%= config[:ex_last_name] %>",
-      "pic_url": "https://ssotest.zoom.us/p/6EoubcvJR7eF2grNXJkrHA/f2003a9c-3095-4865-8536-03cc6f211e86-9569"
+      "pic_url": "https://ssotest.quanshi.us/p/6EoubcvJR7eF2grNXJkrHA/f2003a9c-3095-4865-8536-03cc6f211e86-9569"
     }
   ]
 }

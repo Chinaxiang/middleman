@@ -1,6 +1,6 @@
 ## List Registration Webinars
 
-List all the upcoming registration-based Webinars on Zoom
+List all the upcoming registration-based Webinars on Metting
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/list/registration
 ```
 
 ```javascript
-Zoom.webinar.listRegistration();
+Metting.webinar.listRegistration();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var webinar = {
     host_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.webinar.listRegistration(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.listRegistration(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -44,8 +44,8 @@ Zoom.webinar.listRegistration(webinar, <%= config[:ex_node_res] %>);
     {
       "uuid": "<%= config[:ex_uuid] %>",
       "id": "<%= config[:ex_meeting_number] %>",
-      "start_url": "https://zoom.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
-      "join_url": "https://zoom.us/j/<%= config[:ex_meeting_number] %>",
+      "start_url": "https://quanshi.us/s/<%= config[:ex_meeting_number] %>?zpk=hs65q23kd9sqliy612h23k",
+      "join_url": "https://quanshi.us/j/<%= config[:ex_meeting_number] %>",
       "created_at": "2012-11-25T12:00:00Z",
       "host_id": "<%= config[:ex_uuid] %>",
       "topic": "Topic for this Webinar",

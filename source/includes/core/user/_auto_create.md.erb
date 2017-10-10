@@ -1,13 +1,13 @@
 ## Auto Create User
 
-Create a user on Zoom, returns the created user ID.
+Create a user on Metting, returns the created user ID.
 
 <aside class="notice">
 The API is provided for enterprise customer who has a managed domain
 </aside>
 
 <aside class="warning">
-This feature is disabled by default because of the security risk involved in creating a user who does not belong to your domain without notifying the user. You need to contact Zoom customer support if you want to use this API
+This feature is disabled by default because of the security risk involved in creating a user who does not belong to your domain without notifying the user. You need to contact Metting customer support if you want to use this API
 </aside>
 
 > Definition
@@ -17,7 +17,7 @@ POST <%= config[:api_host] %>user/autocreate
 ```
 
 ```javascript
-Zoom.user.autoCreate();
+Metting.user.autoCreate();
 ```
 
 > Example Request
@@ -41,7 +41,7 @@ var user = {
     password: "<%= config[:ex_password] %>"
 }
 
-Zoom.user.autoCreate(user, <%= config[:ex_node_res] %>);
+Metting.user.autoCreate(user, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -101,7 +101,7 @@ Zoom.user.autoCreate(user, <%= config[:ex_node_res] %>);
 
 Arguments | &nbsp; 
 -------- | -----------
-email **required**                                  | A valid email address. It must be unique in Zoom service. If an email address is existed, a "user existing" error message will be return
+email **required**                                  | A valid email address. It must be unique in Metting service. If an email address is existed, a "user existing" error message will be return
 type **required**                                   | User’s type. 1 for basic user, 2 for pro user, 3 for corp user. Basic user can host up to 40 minutes meeting
 password **required**                               | User's password
 first_name *optional*                               | User's first name

@@ -1,13 +1,13 @@
 ## Create User
 
-Create a user on Zoom, returns the created user ID.
+Create a user on Metting, returns the created user ID.
 
 <aside class="notice">
-Your account must have this privilege to provisioning user. Zoom only assigns this privilege to a trusted partner
+Your account must have this privilege to provisioning user. Metting only assigns this privilege to a trusted partner
 </aside>
 
 <aside class="notice">
-User will get an email sent from Zoom. There is a confirmation link in this email. User will then need to click this link to activate their account to the Zoom service. The user can set or change their password in Zoom.
+User will get an email sent from Metting. There is a confirmation link in this email. User will then need to click this link to activate their account to the Metting service. The user can set or change their password in Metting.
 </aside>
 
 > Definition
@@ -17,7 +17,7 @@ POST <%= config[:api_host] %>user/create
 ```
 
 ```javascript
-Zoom.user.create();
+Metting.user.create();
 ```
 
 > Example Request
@@ -39,7 +39,7 @@ var user = {
     type: 1
 }
 
-Zoom.user.create(user, <%= config[:ex_node_res] %>);
+Metting.user.create(user, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -48,7 +48,7 @@ Zoom.user.create(user, <%= config[:ex_node_res] %>);
 {
     "id": "<%= config[:ex_uuid] %>",
     "email": "<%= config[:ex_email] %>",
-    "first_name": "Zoom",
+    "first_name": "Metting",
     "last_name": "User",
     "type": 1,
     "enable_large": false,
@@ -63,7 +63,7 @@ Zoom.user.create(user, <%= config[:ex_node_res] %>);
 
 Arguments | &nbsp; 
 -------- | -----------
-email **required**                                  | A valid email address. It must be unique in Zoom service. If an email address is existed, a "user existing" error message will be return
+email **required**                                  | A valid email address. It must be unique in Metting service. If an email address is existed, a "user existing" error message will be return
 type **required**                                   | User’s type. 1 for basic user, 2 for pro user, 3 for corp user. Basic user can host up to 40 minutes meeting
 first_name *optional*                               | User's first name
 last_name *optional*                                | User's last name

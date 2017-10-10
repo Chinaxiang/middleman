@@ -1,6 +1,6 @@
 ## Get plans information for a sub account
 
-Get plans information for a sub account of the master account on Zoom.
+Get plans information for a sub account of the master account on Metting.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>ma/account/plan/get
 ```
 
 ```javascript
-Zoom.account.planGet();
+Metting.account.planGet();
 ```
 
 > Example Request
@@ -29,7 +29,7 @@ var account = {
     account_id: "<%= config[:ex_uuid] %>"
 }
 
-Zoom.account.planGet(account, <%= config[:ex_node_res] %>);
+Metting.account.planGet(account, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -50,7 +50,7 @@ Zoom.account.planGet(account, <%= config[:ex_node_res] %>);
     "type": "monthly",
     "hosts": 9
   },
-  "plan_zoom_rooms": {
+  "plan_quanshi_rooms": {
     "type": "zroom_monthly",
     "hosts": 9
   },

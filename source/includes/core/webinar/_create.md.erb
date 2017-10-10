@@ -1,6 +1,6 @@
 ## Create A Webinar
 
-Create a webinar on Zoom, return the created webinar start and join URL.
+Create a webinar on Metting, return the created webinar start and join URL.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>webinar/create
 ```
 
 ```javascript
-Zoom.webinar.create();
+Metting.webinar.create();
 ```
 
 > Example Request
@@ -33,7 +33,7 @@ var webinar = {
     type: 1
 }
 
-Zoom.webinar.create(webinar, <%= config[:ex_node_res] %>);
+Metting.webinar.create(webinar, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -55,8 +55,8 @@ Zoom.webinar.create(webinar, <%= config[:ex_node_res] %>);
   "start_time": " 2015-02-08T12:50:30Z",
   "duration": 0,
   "timezone": "America/Los_Angeles",
-  "start_url": "https://zoom.us/s/<%= config[:ex_meeting_number] %>?zpk=0Oti_Z0tCy ",
-  "join_url": "https://zoom.us/j/<%= config[:ex_meeting_number] %>",
+  "start_url": "https://quanshi.us/s/<%= config[:ex_meeting_number] %>?zpk=0Oti_Z0tCy ",
+  "join_url": "https://quanshi.us/j/<%= config[:ex_meeting_number] %>",
   "registration_url": "",
   "created_at": "2015-01-22T07:09:49Z"
 }
@@ -85,5 +85,5 @@ option_alternative_hosts *optional* | Alternative hosts.
 option_alternative_host_ids *optional* | Alternative hosts IDs.
 option_auto_record_type *optional* | Automatically record type. Can be "local", "cloud" or "none". *Default: local*
 option_panelists_reminder *optional* | Invitation Email to Panelists
-panelists *optional* | Webinar Panelists, should be JSON format: [{"name":"xxx","email":"test1@zoom.us"}, {"name":"xxx","email":"test2@zoom.us"}].
+panelists *optional* | Webinar Panelists, should be JSON format: [{"name":"xxx","email":"test1@quanshi.us"}, {"name":"xxx","email":"test2@quanshi.us"}].
 language *optional* | Language setting of email to panelists. This value should be "en-US", "en", "zh-CN", "zh", "en-ES", "es", "fr-FR" or "fr".

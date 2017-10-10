@@ -1,6 +1,6 @@
 ## Edit A IM Group
 
-Edit a IM group on Zoom, return the new group info.
+Edit a IM group on Metting, return the new group info.
 
 > Definition
 
@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>im/group/edit
 ```
 
 ```javascript
-Zoom.imGroup.update();
+Metting.imGroup.update();
 ```
 
 > Example Request
@@ -30,7 +30,7 @@ var group = {
     ame: "Group Name"
 }
 
-Zoom.imGroup.update(group, <%= config[:ex_node_res] %>);
+Metting.imGroup.update(group, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response

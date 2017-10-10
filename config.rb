@@ -1,5 +1,5 @@
 # Globals
-config[:api_host]           = 'https://api.zoom.us/v1/'
+config[:api_host]           = 'https://api.quanshi.com/'
 config[:ex_api_key]         = 'your_api_key'
 config[:ex_api_secret]      = 'your_api_secret'
 config[:ex_meeting_number]  = '123456789'

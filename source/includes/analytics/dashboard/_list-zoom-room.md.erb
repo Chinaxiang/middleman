@@ -1,21 +1,21 @@
-## List Zoom Rooms
+## List Metting Rooms
 
-List all Zoom Rooms on Zoom.
+List all Metting Rooms on Metting.
 
 > Definition
 
 ```shell
-POST <%= config[:api_host] %>metrics/zoomrooms
+POST <%= config[:api_host] %>metrics/quanshirooms
 ```
 
 ```javascript
-Zoom.dashboard.rooms();
+Metting.dashboard.rooms();
 ```
 
 > Example Request
 
 ```shell
-$ curl <%= config[:api_host] %>metrics/zoomrooms \
+$ curl <%= config[:api_host] %>metrics/quanshirooms \
     -X POST \
     -d api_key=<%= config[:ex_api_key] %> \
     -d api_secret=<%= config[:ex_api_secret] %>
@@ -24,7 +24,7 @@ $ curl <%= config[:api_host] %>metrics/zoomrooms \
 ```javascript
 <%= config[:ex_node_init] %>
 
-Zoom.dashboard.rooms(<%= config[:ex_node_res] %>);
+Metting.dashboard.rooms(<%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -35,11 +35,11 @@ Zoom.dashboard.rooms(<%= config[:ex_node_res] %>);
   "page_number": 1,
   "page_size": 30,
   "total_records": 2,
-  "zoom_rooms": [
+  "quanshi_rooms": [
     {
       "id": "<%= config[:ex_uuid] %>",
-      "room_name": "zoom room1",
-      "email": "zoomroom1@zoom.us",
+      "room_name": "quanshi room1",
+      "email": "quanshiroom1@quanshi.us",
       "account_type": "Work Email",
       "passcode": "123",
       "status": "Available",

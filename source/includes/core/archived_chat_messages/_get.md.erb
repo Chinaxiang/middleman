@@ -9,7 +9,7 @@ POST <%= config[:api_host] %>chat/get
 ```
 
 ```javascript
-Zoom.chat.get();
+Metting.chat.get();
 ```
 
 > Example Request
@@ -35,7 +35,7 @@ var chat = {
     to: "2013-02-11T08:18:09Z"
 }
 
-Zoom.chat.get(chat, <%= config[:ex_node_res] %>);
+Metting.chat.get(chat, <%= config[:ex_node_res] %>);
 ```
 
 > Example Response
@@ -43,7 +43,7 @@ Zoom.chat.get(chat, <%= config[:ex_node_res] %>);
 ```json
 {
   "session_id": "<%= config[:ex_uuid] %>",
-  "group_name": "zoom",
+  "group_name": "quanshi",
   "from": "2016-01-16",
   "to": "2016-01-22",
   "page_size": 30,
