@@ -1,6 +1,5 @@
 # Globals
 config[:api_host]           = 'https://api.zoom.us/v1/'
-config[:deveoper_portal]    = 'https://zoom.us/developer'
 config[:ex_api_key]         = 'your_api_key'
 config[:ex_api_secret]      = 'your_api_secret'
 config[:ex_meeting_number]  = '123456789'
@@ -8,9 +7,9 @@ config[:ex_meeting_topic]   = 'Meeting Topic'
 config[:ex_email]           = 'user@company.com'
 config[:ex_password]        = 'P@55w0rd'
 config[:ex_uuid]            = 'unique_id'
-config[:ex_first_name]      = 'Zoomie'
-config[:ex_last_name]       = 'Userton'
-config[:ex_node_init]       = 'var Zoom = require("zoomus")({
+config[:ex_first_name]      = 'FirstName'
+config[:ex_last_name]       = 'LastName'
+config[:ex_node_init]       = 'var Meeting = require("metting")({
     key : "your_api_key",
     secret : "your_api_secret"
 });'

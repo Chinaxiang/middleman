@@ -6,7 +6,7 @@ language_tabs:
   - javascript: Node
 
 toc_footers:
-  - <a href='http://www.quanshi.com/'>全时云商务服务股份有限公司</a>
+  - <a href='http://www.quanshi.com/' target="_blank">全时云商务服务股份有限公司</a>
 
 includes:
 
