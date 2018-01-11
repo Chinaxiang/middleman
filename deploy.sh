@@ -20,14 +20,7 @@ Options:
 bundle exec middleman build --clean
 
 parse_args() {
-  # Set args from a local environment file.
-  if [ -e ".env" ]; then
-    source .env
-  fi
 
-  # Parse arg flags
-  # If something is exposed as an environment variable, set/overwrite it
-  # here. Otherwise, set/overwrite the internal variable instead.
   while : ; do
     if [[ $1 = "-h" || $1 = "--help" ]]; then
       echo "$help_message"
@@ -49,21 +42,14 @@ parse_args() {
     fi
   done
 
-  # Set internal option vars from the environment and arg flags. All internal
-  # vars should be declared here, with sane defaults if applicable.
-
-  # Source directory & target branch.
   deploy_directory=build
   deploy_branch=gh-pages
 
-  #if no user identity is already set in the current git environment, use this:
   default_username=${GIT_DEPLOY_USERNAME:-deploy.sh}
   default_email=${GIT_DEPLOY_EMAIL:-}
 
-  #repository to deploy to. must be readable and writable.
   repo=origin
 
-  #append commit hash to the end of message by default
   append_hash=${GIT_DEPLOY_APPEND_HASH:-true}
 }
 
@@ -80,12 +66,10 @@ main() {
   commit_title=`git log -n 1 --format="%s" HEAD`
   commit_hash=` git log -n 1 --format="%H" HEAD`
 
-  #default commit message uses last title if a custom one is not supplied
   if [[ -z $commit_message ]]; then
     commit_message="publish: $commit_title"
   fi
 
-  #append hash to commit message unless no hash flag was found
   if [ $append_hash = true ]; then
     commit_message="$commit_message"$'\n\n'"generated from commit $commit_hash"
   fi
