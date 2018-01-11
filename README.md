@@ -101,11 +101,7 @@ Project built successfully.
 
 如果你把项目fork到你的github账号下，并且开启了ssh认证.
 
-将远程gh-pages分支拉下来：
-
 ```
-git checkout origin/gh-pages
-git checkout master
 chmod +x deploy.sh
 ./deploy.sh
 ```
